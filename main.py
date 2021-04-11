@@ -2,7 +2,13 @@ import tkinter as tk
 
 
 root = tk.Tk()
+root.title("Hoofdmenu")
+root.geometry('200x200')
 
+label_text = tk.Label(
+    text="Maak een keuze:"
+)
+label_text.grid(row=1, column=2)
 
 def to_btw():
     print("btw pressed")
@@ -14,7 +20,6 @@ btn_btw = tk.Button(
     text="bereken btw",
     command= to_btw
 )
-btn_btw.pack()
 btn_btw.grid(row=2, column=2)
 
 
