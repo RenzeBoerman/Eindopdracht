@@ -21,7 +21,7 @@ def button_add():
     global f_num
     global math
     math = "addition"
-    f_num = int(first_number)
+    f_num = float(first_number)
     e.delete(0, END)
 
 def button_equal():
@@ -29,16 +29,16 @@ def button_equal():
     e.delete(0, END)
 
     if math == "addition":
-        e.insert(0, f_num + int(second_number))
+        e.insert(0, f_num + float(second_number))
 
     if math == "subtraction":
-        e.insert(0, f_num - int(second_number))
+        e.insert(0, f_num - float(second_number))
 
     if math == "multiplication":
-        e.insert(0, f_num * int(second_number))
+        e.insert(0, f_num * float(second_number))
 
     if math == "division":
-        e.insert(0, f_num / int(second_number))
+        e.insert(0, f_num / float(second_number))
 
 
 
@@ -49,7 +49,7 @@ def button_subtract():
     global f_num
     global math
     math = "subtraction"
-    f_num = int(first_number)
+    f_num = float(first_number)
     e.delete(0, END)
 
 
@@ -58,7 +58,7 @@ def button_multiply():
     global f_num
     global math
     math = "multiplication"
-    f_num = int(first_number)
+    f_num = float(first_number)
     e.delete(0, END)
 
 
@@ -68,7 +68,7 @@ def button_divide():
     global f_num
     global math
     math = "division"
-    f_num = int(first_number)
+    f_num = float(first_number)
     e.delete(0, END)
 
 
