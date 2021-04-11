@@ -28,6 +28,6 @@ btn_rekenmachine = tk.Button(
     command= to_rekenmachine
 )
 
-btn_oppervlakte.grid(row=3, column=2)
+btn_rekenmachine.grid(row=3, column=2)
 
 root.mainloop()
